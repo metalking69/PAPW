@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CCorp tienda online</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="../js/script.js"></script>
+    <link href="../css/stlyle.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse justify-content-between">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a href="pantallaPrincipal.html"><img class="logo" src="../data/logo.png" alt="Logo" width="50" height="50"><a class="navbar-brand" href="pantallaPrincipal.html">CCorp</a></a>
+            </div>
+            <ul class="nav navbar-nav categorias">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categorías
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="buscar.html">Autos</a></li>
+                  <li><a href="buscar.html">Ropa y Accesorios</a></li>
+                  <li><a href="buscar.html">Entretenimiento</a></li>
+                  <li><a href="buscar.html">Electrónica</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+            <form class="navbar-form navbar-left" action="buscar.html">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+                  <button type="submit" class="btn btn-default">Buscar</button>
+              </div>
+            </form>
+              
+            <ul class="nav navbar-nav mi-cuenta">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mi cuenta
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="historial.html">Historial</a></li>
+                  <li><a href="vender.html">Vender</a></li>
+                  <li><a href="editarMisDatos.html">Mis datos</a></li>
+                </ul>
+              </li>
+            </ul>
+              
+            <ul class="nav navbar-nav navbar-right">
+              <li><a  href="registro.html"><span class="glyphicon glyphicon-user"></span> Crear cuenta</a></li>
+              <li><a class="login"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
+              <li><button class="Cart"><i class="fa fa-shopping-cart"></i></button></li>
+                <div class="arrow-up"></div>
+                   
+                <div class="login-form">
+                    <form>
+                        <label>Usuario</label>
+                        <div>
+                            
+                            <input id="usuario" type="text" placeholder="  Usuario" required/>
+                        </div>
+                        <label>Contraseña</label>
+                        <div>
+                            
+                            <input id="contraseña" type="password" placeholder="  Contraseña" required/>
+                        </div>
+                        <div>
+                            <input type="submit" value="Log In"/>
+                           
+                          <label><input type="checkbox" name="remember"> Remember me</label>
+                        </div>
+                        
+                    </form>
+                </div>
+            </ul>
+          </div>
+            
+            
+        </nav>
+    </header>
+    
+    <main>
+
+
+
+<div class="container">
+	<table id="cart" class="table table-hover table-condensed">
+    				<thead>
+						<tr>
+							<th style="width:50%">Producto</th>
+							<th style="width:10%">Precio</th>
+							<th style="width:8%">Cantidad</th>
+							<th style="width:22%" class="text-center">Subtotal</th>
+							<th style="width:10%"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
+									<div class="col-sm-10">
+										<h4 class="nomargin">Product 1</h4>
+										<p>Descripción</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price">$1.99</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center">1.99</td>
+							<td class="actions" data-th="">
+								<button class="btn  btn-sm"><i class="fa fa-refresh"></i></button>
+								<button class="btn  btn-sm"><i class="fa fa-trash-o"></i></button>								
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr class="visible-xs">
+							<td class="text-center"><strong>Total 1.99</strong></td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i> Seguir comprando</a></td>
+							<td colspan="2" class="hidden-xs"></td>
+							<td class="hidden-xs text-center"><strong>Total $1.99</strong></td>
+							<td><a href="#" class="btn btn-default btn-block">Confirmar <i class="fa fa-angle-right"></i></a></td>
+						</tr>
+					</tfoot>
+				</table>
+</div>
+        
+        </main>
+    
+    </body>
+</html>

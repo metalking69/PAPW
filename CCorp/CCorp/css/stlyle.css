@@ -1,0 +1,289 @@
+.navbar.navbar-inverse.justify-content-between{
+   padding: 0px;
+    margin: 0px;
+    border: 0px;
+    height: 30px;
+    z-index: 2;
+}
+
+.navbar-header{
+    position:relative;
+    left:3.5%;
+}
+
+.logo{
+    position: relative;
+    float: left;
+}
+
+.navbar-brand{
+    position:relative;
+    float:right;
+}
+
+.login{
+    position: relative;
+    margin-right: 1 %;
+}
+
+.form-control{  /*caja de texto buscar*/
+    width: 73% !important;
+}
+
+.btn-default{   /*boton buscar*/
+    position: relative;
+    left: 1%;
+    width: 25%;
+    border-radius: 20px;
+}
+
+.form-group{    /*bloque de busqueda completo*/
+    width:100%;
+}
+
+.navbar-form.navbar-left{ 
+    /*width: 540px;*/
+    width: 29%;
+}
+
+
+.categorias{    /*dropdown categorías*/
+    position:relative;
+    left: 12% !important;
+    padding-right:14%;
+}
+
+.mi-cuenta{     /*dropdown cuenta*/
+   
+}
+
+.navbar-right{
+    position: relative;
+    margin-right: 4% !important;
+}
+
+.Cart{
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+.Cart:hover{
+    opacity: 0.6;
+}
+
+.Cart, .carro{
+    color: white;
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+.arrow-up{
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+    right: 56px;
+    top: 37px;
+    display: none;
+}
+
+.login-form{
+    position: absolute;
+    width: 310px;
+    height: auto;
+    background: #fff;
+    right: 10px;
+    top:50px;
+    z-index: 1;
+    border-radius: 3px;
+    border-bottom: 3px solid light-pink;
+       display: none;
+}
+
+#usuario, #contraseña{
+    width: 220px;
+    height: 30px;
+    border:0px;
+    outline: none;
+    box-shadow: inset 0 0 4px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size:14px
+}
+
+input[type="submit"]{
+    width: 95px;
+    height: 35px;
+    background:	#505050;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    outline:none;
+    border: 0px;    
+    border-radius: 3px;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background: #000;
+}
+
+.login-form>form{
+    width: 250px;
+    margin: 15px auto;
+    font-size: 18px;
+    color: dimgray;
+}
+
+
+.carousel-inner img{
+    min-width:1200px;
+    min-height:255px;
+    max-height: 300px;
+    max-width: 1920;
+    padding-top: 0px;
+    margin-top: 0px;
+    border-top: 0px;
+    width:100%;
+    top: 20px;
+}
+
+
+
+
+
+
+
+
+#productosenStock{
+    margin-left: 120px;
+}
+
+.card{
+    position: relative;
+    width:15%;
+    margin-top: 300px;
+}
+
+.contenedor-thumbnail{
+    position: relative;
+    /*margin-top: 300px;*/
+     margin-left: 300px;
+}
+
+
+.span3{
+    display: inline-grid;
+    margin-left: 80px;
+    width: 400px;
+	height: 500px;
+    text-align: center;
+}
+
+
+   img.miniatura{
+      width: 400px;
+       height: 400px;
+} 
+
+
+.thumbnail{
+    width: 400px;
+    height: 500px;
+}
+
+.caption{
+    height: 187.5px;
+}
+
+
+
+#registro-header{
+    padding-left: 50px;
+}
+
+#vender-header{
+    margin-left: -80px;
+}
+
+#editar-header{
+    margin-left: -40px;
+}
+
+
+.container{
+    margin-top: 50px;
+}
+
+.imagen-historial-compra{
+    padding-right: 15px;
+}
+
+.encabezado-tabla1{
+    width: 40%;
+}
+
+.fila{
+    height:100px;
+}
+
+
+
+#btn-ac{
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 0;
+    top:0px;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    padding-top: 35px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.main {
+    margin-left: 18%; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CCorp tienda online</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="../js/script.js"></script>
+    <link href="../css/stlyle.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse justify-content-between">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a href="pantallaPrincipal.html"><img class="logo" src="../data/logo.png" alt="Logo" width="50" height="50"><a class="navbar-brand" href="pantallaPrincipal.html">CCorp</a></a>
+            </div>
+            
+          </div>
+            
+            
+        </nav>
+    </header>
+    <main>
+    
+        <div class="container">
+  <h2 id="registro-header">Registro</h2>
+  <form name="form1" class="form-horizontal" action="#" onsubmit="validateForm()">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="nombre">Nombre:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" name="nombre">
+      </div>
+    </div>
+      
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="apellido">Apellido:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="apellido" placeholder="Ingrese sus apellidos" name="apellido">
+      </div>
+    </div>
+      
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="correo">Correo electrónico:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="correo" placeholder="Ingrese su correo" name="correo">
+      </div>
+    </div>
+      
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="usuario">Nombre de usuario:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="usuario" placeholder="Ingrese un nombre de usuario de mínimo 6 caracteres" name="usuario">
+      </div>
+    </div>
+      
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Contraseña:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd" placeholder="Contraseña con mayúscula, minúscula y número" name="contraseña">
+      </div>
+    </div>
+      
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="telefono">Teléfono:</label>
+      <div class="col-sm-10">          
+        <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su teléfono" name="telefono">
+      </div>
+    </div>
+      
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="direccion">Dirección:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección" name="direccion">
+      </div>
+    </div>
+      
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="usuarioImagen">Foto de perfil:</label>
+      <div class="col-sm-10">          
+        <input type="file" class="form-control" id="usuarioImagen" name="usuarioImagen">
+      </div>
+    </div>
+      
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="portadaImagen">Foto de portada:</label>
+      <div class="col-sm-10">          
+        <input type="file" class="form-control" id="portadaImagen" name="portadaImagen">
+      </div>
+    </div>
+      
+      
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default ">Crear cuenta</button>
+      </div>
+    </div>
+  </form>
+</div>
+        
+    </main>
+    
+    <footer></footer>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["form1"]["nombre"].value;
+            var x2 = document.forms["form1"]["apellido"].value;
+            var x3 = document.forms["form1"]["correo"].value;
+            var x4 = document.forms["form1"]["usuario"].value;
+            var x5 = document.forms["form1"]["contraseña"].value;
+            if (x == "") {
+                alert("El nombre es obligatorio");
+                return false;
+            }
+            else if (x2 == "") {
+                alert("El apellido es obligatorio");
+                return false;
+            }
+            else if (x3 == "") {
+                alert("El correo es obligatorio");
+                return false;
+            }
+            else if (x4 == "") {
+                alert("El usuario es obligatorio");
+                return false;
+            }
+            else if (x5 == "") {
+                alert("El contraseña es obligatorio");
+                return false;
+            }
+            else{
+                alert("Registrado correctamente");
+               window.open("pantallaPrincipal.html");
+                
+            }
+        }
+        
+    </script>
+</body>
+</html>
